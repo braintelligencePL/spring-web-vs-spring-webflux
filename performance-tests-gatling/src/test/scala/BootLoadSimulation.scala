@@ -15,7 +15,7 @@ class BootLoadSimulation extends Simulation {
     .acceptHeader("application/json;charset=UTF-8")
 
   private val addPersonTest = repeat(requestCount) {
-    exec(http("create new product")
+    exec(http("create-new-product")
       .post(endpoint)
       .header("Content-Type", contentType)
       .body(StringBody(

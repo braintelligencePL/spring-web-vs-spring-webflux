@@ -9,7 +9,7 @@ import java.time.Duration
 class ProductService {
 
     fun createProduct(product: Mono<NewProduct>): Mono<Product> = product
-            .delayElement(Duration.ofMillis(500)).map {
+            .delayElement(Duration.ofMillis(200)).map {
                 Product(
                         name = it.name,
                         unitPrice = it.unitPrice

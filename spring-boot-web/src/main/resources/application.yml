@@ -2,4 +2,4 @@ server:
   port: 8010
 
 product-store:
-  base-url:
+  base-url: http://localhost:8000
