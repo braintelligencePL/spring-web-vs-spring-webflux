@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 import pl.braintelligence.domain.Product
 import pl.braintelligence.domain.ProductService
 import pl.braintelligence.infrastructure.dto.NewProduct
-import reactor.core.publisher.Mono
 
 @RestController("products")
 class ProductController(
@@ -17,8 +16,7 @@ class ProductController(
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    fun createProduct(@RequestBody newProduct: Mono<NewProduct>): Mono<Product> =
+    fun createProduct(@RequestBody newProduct: NewProduct): Product? =
             productService.createProduct(newProduct)
 
 }
-

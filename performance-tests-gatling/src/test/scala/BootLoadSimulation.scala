@@ -3,8 +3,8 @@ import io.gatling.http.Predef._
 
 class BootLoadSimulation extends Simulation {
 
-  private val baseUrl = "http://localhost:8080"
-  private val endpoint = "/persons"
+  private val baseUrl = "http://localhost:8010"
+  private val endpoint = "/products"
   private val contentType = "application/json"
   private val requestCount = 4
 
@@ -15,14 +15,14 @@ class BootLoadSimulation extends Simulation {
     .acceptHeader("application/json;charset=UTF-8")
 
   private val addPersonTest = repeat(requestCount) {
-    exec(http("add-person-test")
+    exec(http("create new product")
       .post(endpoint)
       .header("Content-Type", contentType)
       .body(StringBody(
         s"""
            | {
-           |  "firstName": "test-firstName",
-           |  "lastName": "test-lastName"
+           |  "name": "name1234",
+           |  "unitPrice": "1234"
            | }
          """.stripMargin
       )).check(status.is(201)))
