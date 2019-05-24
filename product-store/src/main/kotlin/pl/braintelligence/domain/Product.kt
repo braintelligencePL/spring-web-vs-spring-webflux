@@ -3,7 +3,7 @@ package pl.braintelligence.domain
 import java.util.*
 
 class Product(
-        val id: String = UUID.randomUUID().toString(),
+        val id: String = "123",
         val name: String,
         val unitPrice: String
 )

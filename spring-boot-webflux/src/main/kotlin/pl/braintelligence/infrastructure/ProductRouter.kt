@@ -3,6 +3,7 @@ package pl.braintelligence.infrastructure
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.MediaType
+import org.springframework.web.reactive.function.client.WebClient
 import org.springframework.web.reactive.function.server.router
 import pl.braintelligence.domain.ProductHandler
 
@@ -13,9 +14,8 @@ class ProductRouter(
 
     @Bean
     fun router() = router {
-
         accept(MediaType.APPLICATION_JSON).nest {
-            GET("/hello", productHandler::hello)
+            POST("/products", productHandler::createProduct)
         }
     }
 
