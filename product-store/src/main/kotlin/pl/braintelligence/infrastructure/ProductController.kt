@@ -21,4 +21,3 @@ class ProductController(
             productService.createProduct(newProduct)
 
 }
-
