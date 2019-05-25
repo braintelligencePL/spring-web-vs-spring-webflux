@@ -57,8 +57,6 @@ At 14_000 users at once. Like nothing really happend
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
 
-Lets make 4x users to handle! 
-
-At 56_000 users at once. Well thats my hardware limit but as you can see nothing really happen. Everything works like harm!
+<b> Lets make 4x users to handle! </b> At 56_000 users at once nothing really happen. Another thing is that thats my hardware limit 1k req/s. Everything works even better than with 14k load.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
