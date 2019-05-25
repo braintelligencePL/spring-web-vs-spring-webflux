@@ -28,62 +28,33 @@ subprojects {
     }
 
     group = 'pl.braintelligence'
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 
     dependencies {
-        // Kotlin
+        implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+"
         implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
         implementation 'org.jetbrains.kotlin:kotlin-reflect'
-        implementation 'io.arrow-kt:arrow-core:0.8.2'
-        implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+"
-
-        testImplementation 'io.ktor:ktor-client-core-native:1.1.3'
-        testImplementation "io.ktor:ktor-server-core:1.1.3"
-        testImplementation "io.ktor:ktor-server-netty:1.1.3"
-
-        // Java
-        implementation 'org.jooq:jool:0.9.0'
-        implementation 'io.vavr:vavr:0.10.0'
-        implementation 'org.projectlombok:lombok:1.18.6'
-        implementation 'org.apache.commons:commons-lang3:3.7'
-        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
-        implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
-
-        // Spring
-        implementation 'org.springframework.boot:spring-boot-starter-actuator'
         implementation 'io.projectreactor:reactor-core'
-        testCompile('org.springframework.boot:spring-boot-starter-test')
-        testCompile('io.projectreactor:reactor-test')
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-        // Tests
-        testImplementation 'com.github.tomakehurst:wiremock-jre8:2.21.0'
-        testImplementation 'org.assertj:assertj-core:3.12.2'
-        testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
-        testImplementation 'io.mockk:mockk:1.9.2'
-        testImplementation 'org.junit.jupiter:junit-jupiter-api'
-        testImplementation 'org.junit.jupiter:junit-jupiter-params'
-        testRuntime 'org.junit.jupiter:junit-jupiter-engine'
-        testRuntime 'org.junit.platform:junit-platform-engine'
+        implementation 'io.arrow-kt:arrow-core:0.8.2'
     }
 }
 
-project(':product-store'){
+project(':product-store') {
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
     }
 }
 
-project(':spring-boot-web'){
+project(':spring-boot-web') {
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-web'
 
     }
 }
 
-project(':spring-boot-webflux'){
+project(':spring-boot-webflux') {
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-webflux'
 

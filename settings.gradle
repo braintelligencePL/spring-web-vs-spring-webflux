@@ -1,3 +1,4 @@
 include 'spring-boot-web'
 include 'spring-boot-webflux'
 include 'product-store'
+include 'performance-tests-gatling'

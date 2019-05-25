@@ -15,7 +15,7 @@ class ProductController(
 ) {
 
     @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     fun createProduct(@RequestBody newProduct: NewProduct): Product? =
             productService.createProduct(newProduct)
 

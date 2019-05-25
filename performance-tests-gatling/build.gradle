@@ -14,7 +14,7 @@ dependencies {
 
 task loadTest(type: JavaExec) {
     description = 'Run gatling tests'
-    new File("${buildDir}/reports/gatling").mkdirs() 
+    new File("${buildDir}/reports/gatling").mkdirs()
 
     systemProperties System.getProperties()
 

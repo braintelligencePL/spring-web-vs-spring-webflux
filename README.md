@@ -5,7 +5,7 @@ Analyze performance of spring-boot-web and spring-boot-webflux. Blocking vs Non-
 
 ### `product-store` - slow service
 
-We have some slow service that responds with 200ms delay. Our data center or whatever. 
+We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. 
 
 Run: `./gradlew -p product-store bootRun`
 
