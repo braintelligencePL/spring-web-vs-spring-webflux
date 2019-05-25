@@ -4,8 +4,8 @@ repositories {
     mavenCentral()
 }
 
-group 'com.xyzz.gsdd'
-version '1.0-SNAPSHOT'
+group 'pl.braintelligence'
+
 dependencies {
     compile 'org.scala-lang:scala-library:2.12.4'
     compile 'io.gatling:gatling-app:2.3.0'
