@@ -5,7 +5,7 @@ Analyze performance of spring-boot-web and spring-boot-webflux. Blocking vs Non-
 
 ## 🏬 `product-store` on port 8000 - slow service
 
-We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. 
+We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware that is available we have reactive stack here.
 
 Run: `./gradlew -p product-store bootRun`
 
@@ -31,13 +31,15 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 <br>
 
-## Results: 
+# Results 🧪⚗👩‍🔬
 
 Tests launched with: 
 * MacBook Pro (15-inch, 2017)
 * 2,8 GHz Intel Core i7
 * 16 GB 2133 MHz LPDDR3
 * Radeon Pro 555 2 GB
+
+<br> 
 
 ### Web - simple and popular blocking code
 
