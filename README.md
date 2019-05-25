@@ -3,7 +3,7 @@ Analyze performance of spring-boot-web and spring-boot-webflux. Blocking vs Non-
 
 <br>
 
-## 🏬 `product-store` on port 8000 - slow service
+## 🏬 `product-store: 8000`  - slow service
 
 We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware that is available we have reactive stack here.
 
@@ -11,7 +11,7 @@ Run: `./gradlew -p product-store bootRun`
 
 <br>
 
-## 🕰 `spring-boot-web` on port 8010 - classical web service 
+## 🕰 `spring-boot-web: 8010` - classical web service 
 
 Normal blocking web-service that fetches data from product-store.
 
@@ -19,7 +19,7 @@ Run: `./gradlew -p spring-boot-web bootRun`
 
 <br>
 
-## 🧬 `spring-boot-webflux` on port 8010 - reactive web service 
+## 🧬 `spring-boot-webflux: 8010` - reactive web service 
 
 Non-blocking, reactive web service that fetches data from product-store.
 
