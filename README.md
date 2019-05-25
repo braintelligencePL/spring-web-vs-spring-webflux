@@ -60,3 +60,15 @@ At 14_000 users at once. Like nothing really happend
 <b> Lets make 4x users to handle! </b> At 56_000 users at once nothing really happen. Another thing is that thats my hardware limit 1k req/s. Everything works even better than with 14k load.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
+
+## Summary: 
+
+| Blocking - web        | Reactive - webflux
+| ------------- |-------------:|
+| run: 180sek  | run: 180sek |
+| 56k requests | 224k requests |
+| 14k failed requests | 0 failed requests |
+
+
+
+
