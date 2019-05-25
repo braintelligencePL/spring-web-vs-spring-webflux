@@ -31,7 +31,7 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 <br>
 
-# Results 🧪⚗👩‍🔬
+# Results 👩‍
 
 Tests launched with: 
 * MacBook Pro (15-inch, 2017)
