@@ -27,7 +27,7 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 <br>
 
-4. TODO(" Vertx ")
+## ⚗ TODO(" Vertx ")
 
 <br>
 
