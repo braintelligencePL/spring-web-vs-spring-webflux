@@ -33,6 +33,12 @@ Run: `./gradlew -p spring-boot-web bootRun`
 
 ## Results: 
 
+Tests launched with: 
+* MacBook Pro (15-inch, 2017)
+* 2,8 GHz Intel Core i7
+* 16 GB 2133 MHz LPDDR3
+* 16 GB 2133 MHz LPDDR3
+
 ### Web - simple and popular blocking code
 
 At 10_000 users at once response time started to be long.
@@ -43,7 +49,7 @@ At 14_000 users at once app stoped responding for some time.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
 
-### Webflux - more efficient, but also a bit more complex 
+### Webflux - more efficient, but also a bit more complex to code
 
 At 14_000 users at once. Like nothing really happend
 
