@@ -64,7 +64,7 @@ At 14_000 users at once. Like nothing really happend
 ## Summary: 
 
 | Blocking - web        | Reactive - webflux
-| ------------- |-------------:|
+| ------------- |-------------|
 | run: 180sek  | run: 180sek |
 | 56k requests | 224k requests |
 | 14k failed requests | 0 failed requests |
