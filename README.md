@@ -3,7 +3,7 @@ Analyze performance of spring-boot-web and spring-boot-webflux. Blocking vs Non-
 
 <br>
 
-### `product-store` - slow service
+### `product-store` - slow service 🏬
 
 We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. 
 
@@ -11,7 +11,7 @@ Run: `./gradlew -p product-store bootRun`
 
 <br>
 
-### `spring-boot-web` - Classical web service
+### `spring-boot-web` - classical web service 🕰
 
 Normal blocking web-service that fetches data from product-store.
 
@@ -19,7 +19,7 @@ Run: `./gradlew -p spring-boot-web bootRun`
 
 <br>
 
-### `spring-boot-webflux` - Reactive web service
+### `spring-boot-webflux` - reactive web service 🧬
 
 3. We have non-blocking, reactive web service : <br>
 
