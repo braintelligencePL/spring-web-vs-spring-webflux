@@ -31,7 +31,7 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 <br>
 
-## Performance Tests
+## 🏎 Performance Tests
 
 1. Go to `cd performance-tests-gatling/`
 2. Run with: `./gradlew loadTest -D SIM_USERS=10000`
