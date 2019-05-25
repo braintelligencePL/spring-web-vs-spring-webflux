@@ -37,7 +37,7 @@ Tests launched with:
 * MacBook Pro (15-inch, 2017)
 * 2,8 GHz Intel Core i7
 * 16 GB 2133 MHz LPDDR3
-* 16 GB 2133 MHz LPDDR3
+* Radeon Pro 555 2 GB
 
 ### Web - simple and popular blocking code
 
