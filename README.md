@@ -28,3 +28,12 @@ Run: `./gradlew -p spring-boot-web bootRun`
 <br>
 
 4. TODO(" Vertx ")
+
+
+## Results: 
+
+### Web - simple, popular blocking code
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
