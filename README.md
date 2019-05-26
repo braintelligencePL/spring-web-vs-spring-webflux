@@ -51,17 +51,17 @@ Tests launched with:
 
 ### Web - simple and popular blocking code
 
-At 10_000 users at once response time started to be long.
+10_000 users at once. Response time started to be long.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
 
-At 14_000 users at once app stoped responding for some time.
+14_000 users at once. Too many request and application stoped to respond for some time.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
 
 ### Webflux - more efficient, but also a bit more complex to code
 
-At 14_000 users at once. Like nothing really happend
+14_000 users at once. App seems to work just fine.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
 
