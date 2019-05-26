@@ -46,7 +46,11 @@ Tests launched with:
 * 16 GB 2133 MHz LPDDR3
 * Radeon Pro 555 2 GB
 
-<br> 
+<br>
+
+#### Each user makes 4 requests!
+
+<br>
 
 ### Web - simple and popular blocking code
 
