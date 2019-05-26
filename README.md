@@ -48,7 +48,7 @@ Tests launched with:
 
 <br>
 
-#### Each user makes 4 requests!
+### Each user makes 4 requests!
 
 <br>
 
