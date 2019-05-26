@@ -23,7 +23,7 @@ Run: `./gradlew -p spring-boot-web bootRun`
 
 Non-blocking, reactive web service that fetches data from product-store.
 
-* Run with: `./gradlew -p spring-boot-webflux bootRun`
+Run `./gradlew -p spring-boot-webflux bootRun`
 
 <br>
 
@@ -33,7 +33,7 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 ## 🏎 Performance Tests
 
-* Run with: `./gradlew -p performance-tests-gatling loadTest -D SIM_USERS=1000`
+Run `./gradlew -p performance-tests-gatling loadTest -D USERS=10000`
 
 <br>
 <br>
