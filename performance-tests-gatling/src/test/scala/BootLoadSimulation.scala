@@ -8,7 +8,7 @@ class BootLoadSimulation extends Simulation {
   private val contentType = "application/json"
   private val requestCount = 4
 
-  private val simUsers = System.getProperty("SIM_USERS", "1").toInt
+  private val simUsers = System.getProperty("USERS", "1").toInt
 
   private val httpConf = http
     .baseURL(baseUrl)
