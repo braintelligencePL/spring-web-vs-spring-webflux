@@ -1,9 +1,9 @@
-## spring-web vs spring-webflux
-Analyze performance of spring-boot-web and spring-boot-webflux. Blocking vs Non-Blocking.
+## Spring Web vs Spring Webflux vs Vert.x
+Analyze performance of spring-boot-web and spring-boot-webflux and Vert.x. 
 
 <br>
 
-## 🏬 `product-store: 8000`  - slow service
+## 🏬 `product-store: 8000` - slow service
 
 We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware that is available we have reactive stack here.
 
