@@ -65,7 +65,7 @@ Tests launched with:
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
 
-<b> Lets make 4x users to handle! </b> At 56_000 users at once nothing really happen. Another thing is that thats my hardware limit 1k req/s. Everything works even better than with 14k load.
+<b> Lets make 4x users to handle! </b> 56_000 users at once. Just like nothing really happen. My hardware limit is probably 1k req/s. Interesting thing is that everything works even better than with 14k users load.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
 
