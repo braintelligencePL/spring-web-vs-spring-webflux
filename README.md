@@ -23,7 +23,7 @@ Run: `./gradlew -p spring-boot-web bootRun`
 
 Non-blocking, reactive web service that fetches data from product-store.
 
-* Run with: `./gradlew -p spring-boot-webflux bootRun`
+Run `./gradlew -p spring-boot-webflux bootRun`
 
 <br>
 
@@ -33,12 +33,12 @@ Non-blocking, reactive web service that fetches data from product-store.
 
 ## 🏎 Performance Tests
 
-* Run with: `./gradlew -p performance-tests-gatling loadTest -D SIM_USERS=1000`
+Run `./gradlew -p performance-tests-gatling loadTest -D USERS=10000`
 
 <br>
 <br>
 
-# Results 👩‍
+# Results 👩‍🔬
 
 Tests launched with: 
 * MacBook Pro (15-inch, 2017)
@@ -46,7 +46,11 @@ Tests launched with:
 * 16 GB 2133 MHz LPDDR3
 * Radeon Pro 555 2 GB
 
-<br> 
+<br>
+
+### Each user makes 4 requests! 📈
+
+<br>
 
 ### Web - simple and popular blocking code
 
@@ -54,9 +58,13 @@ Tests launched with:
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
 
+<br> 
+
 14_000 users at once. Too many request and application stoped to respond for some time.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
+
+<br> 
 
 ### Webflux - more efficient, but also a bit more complex to code
 
@@ -64,9 +72,13 @@ Tests launched with:
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
 
+<br> 
+
 <b> Lets make 4x users to handle! </b> 56_000 users at once. Just like nothing really happen. My hardware limit is probably 1k req/s. Interesting thing is that everything works even better than with 14k users load.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
+
+<br> 
 
 ## Summary: 
 
