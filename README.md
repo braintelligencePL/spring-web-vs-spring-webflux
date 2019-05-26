@@ -54,9 +54,13 @@ Tests launched with:
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
 
+<br> 
+
 14_000 users at once. Too many request and application stoped to respond for some time.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
+
+<br> 
 
 ### Webflux - more efficient, but also a bit more complex to code
 
@@ -64,9 +68,13 @@ Tests launched with:
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
 
+<br> 
+
 <b> Lets make 4x users to handle! </b> 56_000 users at once. Just like nothing really happen. My hardware limit is probably 1k req/s. Interesting thing is that everything works even better than with 14k users load.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
+
+<br> 
 
 ## Summary: 
 
