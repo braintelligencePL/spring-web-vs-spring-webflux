@@ -27,7 +27,12 @@ Run `./gradlew -p spring-boot-webflux bootRun`
 
 <br>
 
-## ⚗ TODO(" Vertx ")
+## ⚗ Vertx - Web (WIP)
+
+Go to: `cd vertx-web/`
+Build and run: `./gradlew clean build && java -jar build/libs/vertx-web-1.0.0-SNAPSHOT-fat.jar`
+
+## ⚗ TODO(" Vertx - Reactive")
 
 <br>
 
