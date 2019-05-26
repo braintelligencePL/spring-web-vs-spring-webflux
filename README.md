@@ -1,5 +1,5 @@
 ## Spring Web vs Spring Webflux vs Vert.x
-Analyze performance of spring-boot-web and spring-boot-webflux and Vert.x. 
+Analyze performance of <b>spring-boot-web</b> and <b>spring-boot-webflux</b> and <b>Vert.x</b>. 
 
 <br>
 
