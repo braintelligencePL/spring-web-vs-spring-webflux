@@ -54,9 +54,6 @@ Tests launched with:
 
 <br>
 
-### Each user makes 4 requests! 📈
-
-<br>
 
 ### Web - simple and popular blocking code
 
@@ -90,9 +87,10 @@ Tests launched with:
 
 | Blocking - web        | Reactive - webflux | Reactive Vert.x
 | --------------------------|--------------------------|--------------------------|
-| run: 180sek  | run: 180sek | TODO() |
-| 56k requests | 224k requests | TODO() |
-| 14k failed requests | 0 failed requests | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
 
 
 
