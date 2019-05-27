@@ -61,7 +61,7 @@ Users at once 4_000. Each of them making 50 requests.
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_50reqPerUser.png)
 
 <br> 
 
@@ -73,9 +73,11 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 ### Webflux - more efficient, but also a bit more complex to code
 
-14_000 users at once. App seems to work just fine.
+Users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
 
 <br> 
 
