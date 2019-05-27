@@ -5,7 +5,7 @@ Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b>
 
 ## 🏬 `product-store: 8000` - slow service
 
-We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware that is available we have reactive stack here.
+We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware we have reactive stack here.
 
 Run: `./gradlew -p product-store bootRun`
 
