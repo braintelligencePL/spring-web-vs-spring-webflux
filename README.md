@@ -54,7 +54,6 @@ Tests launched with:
 
 <br>
 
-
 ### Web - users at once 2_000. Each of them making 200 requests.
 
 Simple and popular blocking code.
@@ -63,6 +62,8 @@ Simple and popular blocking code.
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
 
+<br>
+
 ### Webflux - users at once 2_000. Each of them making 200 requests.
 
 More efficient, less popular and a bit more complex to implement.
@@ -70,6 +71,8 @@ More efficient, less popular and a bit more complex to implement.
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_2000users_200reqPerUser.png)
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
+
+<br>
 
 ### Web - users at once 4_000. Each of them making 50 requests.
 
