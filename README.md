@@ -59,45 +59,47 @@ Tests launched with:
 
 Simple and popular blocking code.
 
-Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
-
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_2000users_200reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
 
 ### Webflux - users at once 2_000. Each of them making 200 requests.
 
 More efficient, less popular and a bit more complex to implement.
 
-Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
-
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_2000users_200reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
 
 ### Web - users at once 4_000. Each of them making 50 requests.
 
-Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
-
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_50reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
 <br> 
 
 ### Webflux - Users at once 4_000. Each of them making 50 requests.
 
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
+
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
+<br>
 
 ### Web - users at once 4_000. Each of them making 100 requests.
 
-Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
-
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_100reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
 
 <br> 
 
 ### Webflux - users at once 4_000. Each of them making 100 requests.
 
-Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
-
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_100reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
 
 <br> 
 
