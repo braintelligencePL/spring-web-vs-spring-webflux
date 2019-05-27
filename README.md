@@ -83,7 +83,7 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 <br> 
 
-Users at once 4_000. Each of them making 50 requests.
+Users at once 4_000. Each of them making 100 requests.
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
 
