@@ -65,9 +65,11 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 <br> 
 
-14_000 users at once. Too many request and application stoped to respond for some time.
+Users at once 4_000. Each of them making 100 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_100reqPerUser.png)
 
 <br> 
 
@@ -81,9 +83,11 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 <br> 
 
-<b> Lets make 4x users to handle! </b> 56_000 users at once. Just like nothing really happen. My hardware limit is probably 1k req/s. Interesting thing is that everything works even better than with 14k users load.
+Users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_100reqPerUser.png)
 
 <br> 
 
