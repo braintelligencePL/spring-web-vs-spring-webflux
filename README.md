@@ -57,9 +57,11 @@ Tests launched with:
 
 ### Web - simple and popular blocking code
 
-10_000 users at once. Response time started to be long.
+Users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
 
 <br> 
 
