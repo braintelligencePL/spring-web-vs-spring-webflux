@@ -5,7 +5,7 @@ Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b>
 
 ## 🏬 `product-store: 8000` - slow service
 
-We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware that is available we have reactive stack here.
+We have some slow service that responds with 200ms delay. Lets assume that this service mimics some service accessed via HTTP. To better utilize hardware we have reactive stack here.
 
 Run: `./gradlew -p product-store bootRun`
 
@@ -54,35 +54,55 @@ Tests launched with:
 
 <br>
 
-### Each user makes 4 requests! 📈
+### Web - users at once 2_000. Each of them making 200 requests.
+
+Simple and popular blocking code.
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_2000users_200reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
 
 <br>
 
-### Web - simple and popular blocking code
+### Webflux - users at once 2_000. Each of them making 200 requests.
 
-10_000 users at once. Response time started to be long.
+More efficient, less popular and a bit more complex to implement.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_10000.png)
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_2000users_200reqPerUser.png)
 
-<br> 
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_PER_USER=200`
 
-14_000 users at once. Too many request and application stoped to respond for some time.
+<br>
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web_14000.png)
+### Web - users at once 4_000. Each of them making 50 requests.
 
-<br> 
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_50reqPerUser.png)
 
-### Webflux - more efficient, but also a bit more complex to code
-
-14_000 users at once. App seems to work just fine.
-
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_14000.png)
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
 <br> 
 
-<b> Lets make 4x users to handle! </b> 56_000 users at once. Just like nothing really happen. My hardware limit is probably 1k req/s. Interesting thing is that everything works even better than with 14k users load.
+### Webflux - Users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/webflux_56000.png)
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
+
+<br>
+
+### Web - users at once 4_000. Each of them making 100 requests.
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_100reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
+
+<br> 
+
+### Webflux - users at once 4_000. Each of them making 100 requests.
+
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_100reqPerUser.png)
+
+Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
 
 <br> 
 
@@ -90,9 +110,10 @@ Tests launched with:
 
 | Blocking - web        | Reactive - webflux | Reactive Vert.x
 | --------------------------|--------------------------|--------------------------|
-| run: 180sek  | run: 180sek | TODO() |
-| 56k requests | 224k requests | TODO() |
-| 14k failed requests | 0 failed requests | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
+| TODO() | TODO() | TODO() |
 
 
 
