@@ -3,21 +3,17 @@ import io.gatling.http.Predef._
 
 class BootLoadSimulation extends Simulation {
 
-  private val baseUrl = "http://localhost:8010"
-  private val endpoint = "/products"
-  private val contentType = "application/json"
-  private val requestCount = 4
-
-  private val simUsers = System.getProperty("USERS", "1").toInt
+  private val users = System.getProperty("USERS", "1").toInt
+  private val requestsPerUser = System.getProperty("REQUESTS_PER_USER", "1").toInt
 
   private val httpConf = http
-    .baseURL(baseUrl)
+    .baseURL("http://localhost:8010")
     .acceptHeader("application/json;charset=UTF-8")
 
-  private val addPersonTest = repeat(requestCount) {
+  private val createProduct = repeat(requestsPerUser) {
     exec(http("create-new-product")
-      .post(endpoint)
-      .header("Content-Type", contentType)
+      .post("/products")
+      .header("Content-Type", "application/json")
       .body(StringBody(
         s"""
            | {
@@ -28,8 +24,10 @@ class BootLoadSimulation extends Simulation {
       )).check(status.is(200)))
   }
   private val scn = scenario("BootLoadSimulation")
-    .exec(addPersonTest)
+    .exec(createProduct)
 
-  setUp(scn.inject(atOnceUsers(simUsers))).protocols(httpConf)
+  setUp(scn.inject(
+    atOnceUsers(users)
+  )).protocols(httpConf)
 }
 
