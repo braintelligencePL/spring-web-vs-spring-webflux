@@ -76,7 +76,7 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=2000 -D REQUESTS_
 
 ### Web - users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_50reqPerUser2.png)
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/web_4000users_50reqPerUser.png)
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
@@ -84,7 +84,7 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 ### Webflux - Users at once 4_000. Each of them making 50 requests.
 
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser.png)
+![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_50reqPerUser2.png)
 
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=50`
 
