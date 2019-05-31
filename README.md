@@ -108,13 +108,4 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 ## Summary: 
 
-| Blocking - web        | Reactive - webflux | Reactive Vert.x
-| --------------------------|--------------------------|--------------------------|
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-
-
-
-
+Basically reactive stack performs requests twice that fast.
