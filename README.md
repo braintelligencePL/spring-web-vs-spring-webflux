@@ -1,5 +1,5 @@
 ## Spring Web vs Spring Webflux vs Vert.x
-Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b> and <b>`Vert.x`</b>. 
+Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b>
 
 <br>
 
@@ -27,13 +27,7 @@ Run `./gradlew -p spring-boot-webflux bootRun`
 
 <br>
 
-## ⚗ Vertx - Web (WIP)
-
-Go to: `cd vertx-web/`
-
-Build and run: `./gradlew clean build && java -jar build/libs/vertx-web-1.0.0-SNAPSHOT-fat.jar`
-
-## ⚗ TODO(" Vertx - Reactive")
+## ⚗ (WIP) Vertx - web and reactive
 
 <br>
 
