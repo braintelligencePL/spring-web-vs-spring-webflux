@@ -1,4 +1,4 @@
-## Spring Web vs Spring Webflux vs Vert.x
+## Spring Web vs Spring Webflux
 Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b>
 
 <br>
@@ -24,10 +24,6 @@ Run: `./gradlew -p spring-boot-web bootRun`
 Non-blocking, reactive web service that fetches data from product-store.
 
 Run `./gradlew -p spring-boot-webflux bootRun`
-
-<br>
-
-## ⚗ (WIP) Vertx - web and reactive
 
 <br>
 
