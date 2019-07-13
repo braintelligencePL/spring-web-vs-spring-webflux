@@ -1,3 +1,5 @@
+rootProject.name = 'spring-web-vs-spring-webflux'
+
 include 'spring-boot-web'
 include 'spring-boot-webflux'
 include 'product-store'

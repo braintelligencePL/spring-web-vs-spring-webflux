@@ -14,10 +14,9 @@ class ProductService(
 
     private val restTemplate = restTemplateBuilder.build()
 
-    fun createProduct(newProduct: NewProduct): Product? =
-            restTemplate.postForEntity(
-                    productStoreBaseUrl.plus("/products"),
-                    HttpEntity(newProduct),
-                    Product::class.java
-            ).body
+    fun createProduct(newProduct: NewProduct): Product? = restTemplate.postForEntity(
+            "$productStoreBaseUrl/products",
+            HttpEntity(newProduct),
+            Product::class.java
+    ).body
 }

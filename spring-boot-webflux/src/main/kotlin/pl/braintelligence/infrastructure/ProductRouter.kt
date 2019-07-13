@@ -2,12 +2,10 @@ package pl.braintelligence.infrastructure
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.http.MediaType
-import org.springframework.web.reactive.function.server.ServerResponse
-import org.springframework.web.reactive.function.server.body
 import org.springframework.web.reactive.function.server.router
-import pl.braintelligence.domain.Product
 import pl.braintelligence.domain.ProductHandler
+import org.springframework.http.MediaType.APPLICATION_JSON
+
 
 @Configuration
 class ProductRouter(
@@ -16,12 +14,10 @@ class ProductRouter(
 
     @Bean
     fun router() = router {
-        accept(MediaType.APPLICATION_JSON).nest {
-            POST("/products") {
-                val productRouter= productHandler.createProduct(it)
-                return@POST ServerResponse.ok().body(productRouter)
-            }
+        accept(APPLICATION_JSON).nest {
+            POST("/products", productHandler::createProduct)
         }
     }
+
 
 }

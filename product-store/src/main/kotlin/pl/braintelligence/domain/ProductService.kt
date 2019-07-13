@@ -8,8 +8,8 @@ import java.time.Duration
 @Service
 class ProductService {
 
-    fun createProduct(product: Mono<NewProduct>): Mono<Product> = product
-            .delayElement(Duration.ofMillis(200)).map {
+    fun createProduct(product: Mono<NewProduct>): Mono<Product> =
+            product.delayElement(Duration.ofMillis(200)).map {
                 Product(
                         name = it.name,
                         unitPrice = it.unitPrice

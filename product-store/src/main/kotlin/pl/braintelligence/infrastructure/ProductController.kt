@@ -19,5 +19,4 @@ class ProductController(
     @ResponseStatus(HttpStatus.CREATED)
     fun createProduct(@RequestBody newProduct: Mono<NewProduct>): Mono<Product> =
             productService.createProduct(newProduct)
-
 }
