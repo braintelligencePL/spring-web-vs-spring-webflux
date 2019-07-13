@@ -1,5 +1,5 @@
-## Spring Web vs Spring Webflux vs Vert.x
-Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b> and <b>`Vert.x`</b>. 
+## Spring Web vs Spring Webflux
+Analyze performance of <b>`spring-boot-web`</b> and <b>`spring-boot-webflux`</b>
 
 <br>
 
@@ -24,16 +24,6 @@ Run: `./gradlew -p spring-boot-web bootRun`
 Non-blocking, reactive web service that fetches data from product-store.
 
 Run `./gradlew -p spring-boot-webflux bootRun`
-
-<br>
-
-## ⚗ Vertx - Web (WIP)
-
-Go to: `cd vertx-web/`
-
-Build and run: `./gradlew clean build && java -jar build/libs/vertx-web-1.0.0-SNAPSHOT-fat.jar`
-
-## ⚗ TODO(" Vertx - Reactive")
 
 <br>
 
@@ -108,13 +98,4 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 
 ## Summary: 
 
-| Blocking - web        | Reactive - webflux | Reactive Vert.x
-| --------------------------|--------------------------|--------------------------|
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-| TODO() | TODO() | TODO() |
-
-
-
-
+Basically reactive stack performs requests twice that fast.
