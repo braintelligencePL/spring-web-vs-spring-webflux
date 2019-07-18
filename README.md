@@ -29,7 +29,7 @@ Run `./gradlew -p spring-boot-webflux bootRun`
 
 ## 🏎 Performance Tests
 
-Run `./gradlew -p performance-tests-gatling loadTest -D USERS=10000`
+Run `./gradlew -p performance-tests-gatling loadTest -D USERS=XXX -D REQUESTS_PER_USER=XXX`
 
 <br>
 <br>
