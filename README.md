@@ -91,7 +91,7 @@ Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_
 ### Webflux - users at once 4_000. Each of them making 100 requests.
 
 ![](https://github.com/braintelligencePL/playgrounds/blob/master/images/web-vs-webflux/webflux_4000users_100reqPerUser.png)
-![](https://github.com/braintelligencePL/playgrounds/blob/master/images/Screenshot%202019-08-11%20at%2011.40.11.png)
+
 Run: `./gradlew -p performance-tests-gatling loadTest -D USERS=4000 -D REQUESTS_PER_USER=100`
 
 <br> 
